@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://primecartracker.totalh.net/sitemap.xml
