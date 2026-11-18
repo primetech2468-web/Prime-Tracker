@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://primecartracker.totalh.net/sitemap.xml
+
+Sitemap: https://primetracker247.vercel.app/sitemap.xml
