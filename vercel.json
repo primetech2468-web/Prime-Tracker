@@ -1,32 +1,26 @@
 {
  "cleanUrls": false,
  "trailingSlash": true,
+ "redirects": [
+  {"source":"/faq/","destination":"/questions/","permanent":true},
+  {"source":"/faqs/","destination":"/questions/","permanent":true},
+  {"source":"/car-tracker/","destination":"/services/car-tracker-installation/","permanent":true},
+  {"source":"/gps-tracker/","destination":"/services/car-tracker-installation/","permanent":true},
+  {"source":"/about-us/","destination":"/about/","permanent":true},
+  {"source":"/contact-us/","destination":"/contact/","permanent":true},
+  {"source":"/blogs/","destination":"/blog/","permanent":true}
+ ],
  "headers": [
-  {
-   "source": "/(.*)",
-   "headers": [
-    {
-     "key": "X-Content-Type-Options",
-     "value": "nosniff"
-    },
-    {
-     "key": "Referrer-Policy",
-     "value": "strict-origin-when-cross-origin"
-    },
-    {
-     "key": "X-Frame-Options",
-     "value": "SAMEORIGIN"
-    }
-   ]
-  },
-  {
-   "source": "/(.*)\\.(png|jpg|css|mp4|webp|svg)",
-   "headers": [
-    {
-     "key": "Cache-Control",
-     "value": "public, max-age=2592000"
-    }
-   ]
-  }
+  {"source":"/(.*)","headers":[
+   {"key":"X-Content-Type-Options","value":"nosniff"},
+   {"key":"Referrer-Policy","value":"strict-origin-when-cross-origin"},
+   {"key":"X-Frame-Options","value":"SAMEORIGIN"},
+   {"key":"Strict-Transport-Security","value":"max-age=63072000; includeSubDomains; preload"},
+   {"key":"Permissions-Policy","value":"camera=(), microphone=(), geolocation=()"}]},
+  {"source":"/(.*)\\.(png|jpg|webp|svg|woff2)","headers":[{"key":"Cache-Control","value":"public, max-age=2592000, immutable"}]},
+  {"source":"/assets/(.*)","headers":[{"key":"Cache-Control","value":"public, max-age=604800"}]},
+  {"source":"/sitemap.xml","headers":[{"key":"Content-Type","value":"application/xml; charset=utf-8"}]},
+  {"source":"/blog/rss.xml","headers":[{"key":"Content-Type","value":"application/rss+xml; charset=utf-8"}]},
+  {"source":"/llms.txt","headers":[{"key":"Content-Type","value":"text/plain; charset=utf-8"}]}
  ]
 }

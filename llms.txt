@@ -1,0 +1,14 @@
+# Prime Car Tracker
+> GPS car tracker installation across all 36 Nigerian states and the FCT: hidden installation, live tracking, theft alerts, remote engine cut-off and 24/7 support.
+
+Contact: WhatsApp +234 814 120 5620, primecartracker8@gmail.com, +234 905 563 3870
+
+## Key pages
+- [Services](https://primetracker247.vercel.app/services/)
+- [Solutions by industry](https://primetracker247.vercel.app/solutions/)
+- [Features](https://primetracker247.vercel.app/features/)
+- [Vehicle models](https://primetracker247.vercel.app/vehicles/)
+- [Questions and answers](https://primetracker247.vercel.app/questions/)
+- [Guides](https://primetracker247.vercel.app/blog/)
+- [Locations](https://primetracker247.vercel.app/locations/)
+- [Pricing](https://primetracker247.vercel.app/pricing/)
